@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: Verdana, sans-serif;
@@ -81,6 +86,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .heading-1 span {
   font-weight: 600;
   padding: 1.1rem 1.8rem;
@@ -108,10 +114,24 @@ body {
   grid-row-gap: 1.5rem;
 }
 
+@media only screen and (max-width: 26.875em) {
+  .projects__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .project-img {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.2);
   z-index: 2;
+}
+@media only screen and (max-width: 26.875em) {
+  .projejct-img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .project-img-1 {
@@ -219,10 +239,27 @@ body {
   grid-column: 1 / -1;
   margin-bottom: -2rem;
 }
+
 .about-text {
   font-size: 1.4rem;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
+}
+
+@media only screen and (max-width: 26.875em) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .artist-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .artist-img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 .artist-img {
@@ -267,6 +304,12 @@ body {
 /* contact section */
 .contact {
   margin: 6rem 4rem;
+}
+
+@media only screen and (max-width: 26.875em) {
+  .contact .text {
+    margin-bottom: 1rem;
+  }
 }
 
 .input {
