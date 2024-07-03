@@ -9,28 +9,28 @@
   </head>
 
   <body>
-      <!-- navigation -->
-      <nav class="navigation sticky">
-        <div class="nav__logo">
-          <a href="#" class="nav__link" id="#"><span>BR</span> Architects</a>
+  <header class="header">
+    <nav class="navigation">
+      <div class="nav__logo">
+        <a href="#" class="nav__link" id="#"><span>BR</span> Architects</a>
         </div>
-        <ul class="nav__lists">
-          <li class="nav__list">
-            <a href="#project" class="nav__link">Projects</a>
-          </li>
-          <li class="nav__list">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__list">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Header -->
-      <header class="header">
-        <h1 class="heading-1"><span>BR</span> Architects</h1>
-      </header>
+      <ul class="nav__lists">
+        <li class="nav__list">
+          <a href="#project" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__list">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__list">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-banner">
+      <h1 class="heading-1"><span>BR</span> 
+        Architects</h1>
+    </div>
+  </header>
 
       <!-- Project section -->
 
@@ -168,15 +168,15 @@
       <section class="contact" id="contact" name="contact" netlify>
         <h2 class="heading-2">Contact</h2>
         <p class="text">Lets get in touch and talk about your next project.</p>
-        <form action="#" class="form-group">
-          <input type="text" class="input" placeholder="Name" />
-          <input type="text" class="input" placeholder="Email" />
-          <input type="text" class="input" placeholder="Subject" />
-          <input type="text" class="input" placeholder="Comment" />
+        <form action="#" class="form-group" id="contactForm">
+          <input type="text" class="input" id="name" placeholder="Name" required />
+          <input type="email" class="input" id="email" placeholder="Email" required />
+          <input type="text" class="input" id="subject" placeholder="Subject" required />
+          <!-- <input type="text" class="input" placeholder="Comment" required /> -->
+          <textarea class="input" id="comment" id="comment" placeholder="Comment" required></textarea>
+          <button type="submit" class="btn btn-send">Send message</button>
         </form>
-        <button class="btn btn-send">
-          <a href="#" class="link">Send message</a>
-        </button>
+       
 
         <img src="./images/map.jpeg" alt="map" class="map" />
       </section>

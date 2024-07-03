@@ -25,15 +25,19 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5rem;
   letter-spacing: 0.4rem;
   height: 50px;
 }
-.sticky {
-  top: 0;
+
+.navigation.sticky {
   position: fixed;
-  color: #fff;
-  z-index: 10;
+  background-color: rgba(254, 251, 251, 0.903);
+  color: #333;
+  font-weight: bold;
+  z-index: 100;
+  width: 100%;
 }
 
 .nav__logo {
@@ -71,9 +75,9 @@ body {
 }
 
 /* Header */
-.header {
+.header-banner {
   height: 80vh;
-  margin: 4rem;
+  margin: 1rem 4rem 4rem 4rem;
   background-image: url(./images/architect.jpeg);
   background-size: cover;
   background-position: bottom;
@@ -283,16 +287,18 @@ body {
 }
 
 .btn-send {
+  display: block;
   border-radius: 0;
   border: none;
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: #000;
+  color: #fff;
 }
 
-.link:link,
+/* .link:link,
 .link:visited {
   color: #fff;
   text-decoration: none;
@@ -305,7 +311,7 @@ body {
   background-color: #e9ecef;
   color: #212529;
   padding: 1.5rem 2rem;
-}
+} */
 .map {
   margin-top: 4rem;
   width: 100%;
